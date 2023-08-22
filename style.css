@@ -3,8 +3,10 @@ html {
 }
 
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  background-color: rgb(245, 245, 231);
+  background-color: #fbfbef;
+  margin: 20px 0;
 }
 
 .container {
@@ -80,6 +82,7 @@ h6 {
 footer ul {
   display: flex;
   gap: 100px;
+  padding-left: 0;
   justify-content: center;
   list-style-type: none;
 }
@@ -88,10 +91,79 @@ footer ul {
   display: block;
   padding: 20px 30px;
   border-radius: 15px;
-  background-color: #f5f5e7;
+  background-color: #fffff3;
   transition: 0.4s;
 }
 
 .footer-link:hover {
   background-color: #f9f9f0;
+}
+
+@media (max-width: 1200px) {
+  body {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 20px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5,
+  h6 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 440px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5,
+  h6 {
+    font-size: 18px;
+  }
+  .container {
+    padding: 20px 15px;
+  }
+  footer ul {
+    justify-content: space-around;
+    gap: 0;
+  }
 }
